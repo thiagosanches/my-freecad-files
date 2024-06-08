@@ -1,0 +1,6 @@
+# FreeCAD exported formats.
+*.svg
+*.stl
+
+# FreeCAD backup files.
+*.FCStd1
