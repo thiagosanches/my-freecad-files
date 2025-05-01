@@ -4,5 +4,6 @@
 
 # FreeCAD backup files.
 *.FCStd1
+*.FCBak
 
 temp/
