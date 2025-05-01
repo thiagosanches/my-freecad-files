@@ -13,6 +13,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/round-screwdriver-adapter.FCStd_thumb.png) | [round-screwdriver-adapter.FCStd](./round-screwdriver-adapter.FCStd) | N/A |
 | ![image](./thumbnails/bracket-for-desktop-under-table.FCStd_thumb.png) | [bracket-for-desktop-under-table.FCStd](./bracket-for-desktop-under-table.FCStd) | N/A |
 | ![image](./thumbnails/round-adapter-dry-fit-fabric.FCStd_thumb.png) | [round-adapter-dry-fit-fabric.FCStd](./round-adapter-dry-fit-fabric.FCStd) | N/A |
+| ![image](./thumbnails/rack-1u-inox-bar.FCStd_thumb.png) | [rack-1u-inox-bar.FCStd](./rack-1u-inox-bar.FCStd) | N/A |
 | ![image](./thumbnails/pegboard-hook-2.FCStd_thumb.png) | [pegboard-hook-2.FCStd](./pegboard-hook-2.FCStd) | N/A |
 | ![image](./thumbnails/parametric-wood-joint.FCStd_thumb.png) | [parametric-wood-joint.FCStd](./parametric-wood-joint.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket-2.FCStd_thumb.png) | [angle-bracket-2.FCStd](./angle-bracket-2.FCStd) | N/A |
