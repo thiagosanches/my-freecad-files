@@ -15,5 +15,4 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/keyring-arduino.FCStd_thumb.png) | [keyring-arduino.FCStd](./keyring-arduino.FCStd) | N/A |
 | ![image](./thumbnails/parametric-wood-joint.FCStd_thumb.png) | [parametric-wood-joint.FCStd](./parametric-wood-joint.FCStd) | N/A |
 | ![image](./thumbnails/keychain-esp32.FCStd_thumb.png) | [keychain-esp32.FCStd](./keychain-esp32.FCStd) | N/A |
-| ![image](./thumbnails/123.FCStd_thumb.png) | [123.FCStd](./123.FCStd) | N/A |
 <!-- END TABLE -->
