@@ -5,6 +5,9 @@ FREECAD_PREVIOUS_FILE="$FREECAD_FILE.previous.FCStd"
 TEMP_CURRENT_FOLDER="temp_current/"
 TEMP_PREVIOUS_FOLDER="temp_previous/"
 
+mkdir "$TEMP_CURRENT_FOLDER"
+mkdir "$TEMP_PREVIOUS_FOLDER"
+
 # Get the previous version of the file.
 git show HEAD~1:$FREECAD_FILE > $FREECAD_PREVIOUS_FILE
 

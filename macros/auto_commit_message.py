@@ -1,17 +1,10 @@
-# AutoCommitMessage.py
-# FreeCAD macro to generate AI commit messages on save using Git diffs
-
+# auto_commit_message.py
+# FreeCAD macro to generate AI commit messages on save using Git diffs.
 import FreeCAD
+import FreeCADGui as Gui
 from PySide2.QtCore import QObject
 from PySide2.QtWidgets import QMessageBox
-import zipfile
-import tempfile
 import subprocess
-import os
-import sys
-
-# Configure your OpenAI API key here
-# openai.api_key = "YOUR_API_KEY_HERE"
 
 
 class GitCommitGenerator(QObject):
@@ -29,6 +22,8 @@ class GitCommitGenerator(QObject):
 
         file_path = doc.FileName
         print(file_path)
+
+        Gui.SendMsgToActiveView("ViewFit")
 
         subprocess.Popen([
             "bash", "-c",
