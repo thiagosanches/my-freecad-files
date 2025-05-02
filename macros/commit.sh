@@ -53,12 +53,10 @@ cat <<EOF > body.json
 }
 EOF
 
-MESSAGE="UPDATING"
-
-#MESSAGE=$(time curl "https://api.openai.com/v1/chat/completions" \
-#    -H "Content-Type: application/json" \
-#    -H "Authorization: Bearer $OPENAI_API_KEY" \
-#    -d @body.json | jq '.choices[].message.content' --raw-output)
+MESSAGE=$(time curl "https://api.openai.com/v1/chat/completions" \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
+    -d @body.json | jq '.choices[].message.content' --raw-output)
 
 rm -rf "$TEMP_PREVIOUS_FOLDER" "$TEMP_CURRENT_FOLDER" "$FREECAD_PREVIOUS_FILE" body.json
 echo "$MESSAGE"
