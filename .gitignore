@@ -6,5 +6,8 @@
 *.FCStd1
 *.FCBak
 
+# Unecessary files.
 temp/
 macros/ai.properties
+temp_current/
+temp_previous/
