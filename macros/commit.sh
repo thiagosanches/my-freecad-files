@@ -1,13 +1,19 @@
 #!/bin/bash
 
+COMMIT_FILE="$0"
 FREECAD_FILE="$1"
 FREECAD_PREVIOUS_FILE="$FREECAD_FILE.previous.FCStd"
 TEMP_CURRENT_FOLDER="temp_current/"
 TEMP_PREVIOUS_FOLDER="temp_previous/"
+FREECAD_FILE_ONLY="$(basename "$FREECAD_FILE")"
+
+# Assuming you have all your FreeCAD files stored under a root folder that is a Git repository.
+cd $(dirname "$FREECAD_FILE")
+MACROS_FOLDER="$(dirname $COMMIT_FILE)"
 
 # You just need to define the file with the following content:
 # OPENAI_API_KEY="sk-YOUR-KEY-GOES-HERE"
-source ./ai.properties
+source "$MACROS_FOLDER/ai.properties"
 
 mkdir "$TEMP_CURRENT_FOLDER"
 mkdir "$TEMP_PREVIOUS_FOLDER"
@@ -31,7 +37,7 @@ CURRENT_FILE_CONTENT=$(cat $TEMP_CURRENT_FOLDER/Document.xml)
 CURRENT_FILE_CONTENT=$(echo -e "$CURRENT_FILE_CONTENT" | sed -z 's/\n//g' | jq -Rs)
 MAIN_DIFF=$(echo -e "$MAIN_DIFF" | sed -z 's/\n//g' | jq -Rs)
 
-PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive commit message that clearly explains the changes made to the CAD model, using simple language and referencing the provided file name. This will enable effective change tracking through accurate and informative messages. Please disregard any differences related to camera settings and concentrate on changes affecting solids and sketches. CURRENT FILE NAME: $FREECAD_FILE CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT DIFF: $MAIN_DIFF"
+PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive commit message that clearly explains the changes made to the CAD model, using simple language and referencing the provided file name. This will enable effective change tracking through accurate and informative messages. Please disregard any differences related to camera settings and concentrate on changes affecting solids and sketches. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT DIFF: $MAIN_DIFF"
 
 PROMPT=$(echo "$PROMPT" | sed 's/["\]//g')
 
@@ -46,10 +52,6 @@ cat <<EOF > body.json
     ]
 }
 EOF
-
-
-
-
 
 MESSAGE=$(time curl "https://api.openai.com/v1/chat/completions" \
     -H "Content-Type: application/json" \

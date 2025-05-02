@@ -26,14 +26,18 @@ class GitCommitGenerator(QObject):
         # Just to put the thumbnails right in the center, so they look better when viewing them.
         Gui.SendMsgToActiveView("ViewFit")
 
-        subprocess.Popen([
+        process = subprocess.Popen([
             "bash", "-c",
             f"/home/thiago/r/github/my-freecad-files/macros/commit.sh '{file_path}'"
         ])
+        return_code = process.wait()
 
-        QMessageBox.information(
-            None, "Information", "We are good!")
-
+        if return_code == 0:
+            QMessageBox.information(
+                None, "OK", "We are good!")
+        else:
+            QMessageBox.error(
+                None, "Error", "The script was not executed properly!")
 
 # Initialize the handler when macro is loaded
 print("FreeCAD version:", FreeCAD.Version())
