@@ -5,6 +5,10 @@ FREECAD_PREVIOUS_FILE="$FREECAD_FILE.previous.FCStd"
 TEMP_CURRENT_FOLDER="temp_current/"
 TEMP_PREVIOUS_FOLDER="temp_previous/"
 
+# You just need to define the file with the following content:
+# OPENAI_API_KEY="sk-YOUR-KEY-GOES-HERE"
+source ./ai.properties
+
 mkdir "$TEMP_CURRENT_FOLDER"
 mkdir "$TEMP_PREVIOUS_FOLDER"
 
