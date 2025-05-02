@@ -25,6 +25,7 @@ class GitCommitGenerator(QObject):
 
         # Just to put the thumbnails right in the center, so they look better when viewing them.
         Gui.SendMsgToActiveView("ViewFit")
+        doc.save()
 
         process = subprocess.Popen([
             "bash", "-c",
