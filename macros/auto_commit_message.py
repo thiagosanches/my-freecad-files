@@ -23,12 +23,16 @@ class GitCommitGenerator(QObject):
         file_path = doc.FileName
         print(file_path)
 
+        # Just to put the thumbnails right in the center, so they look better when viewing them.
         Gui.SendMsgToActiveView("ViewFit")
 
         subprocess.Popen([
             "bash", "-c",
             f"/home/thiago/r/github/my-freecad-files/macros/commit.sh '{file_path}'"
         ])
+
+        QMessageBox.information(
+            None, "Information", "We are good!")
 
 
 # Initialize the handler when macro is loaded
