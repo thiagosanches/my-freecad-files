@@ -20,6 +20,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/angle-bracket-2.FCStd_thumb.png) | [angle-bracket-2.FCStd](./angle-bracket-2.FCStd) | N/A |
 | ![image](./thumbnails/esp32-c3-round-display-beamsplitter-cube.FCStd_thumb.png) | [esp32-c3-round-display-beamsplitter-cube.FCStd](./esp32-c3-round-display-beamsplitter-cube.FCStd) | N/A |
 | ![image](./thumbnails/plate-motor-linear-actuator.FCStd_thumb.png) | [plate-motor-linear-actuator.FCStd](./plate-motor-linear-actuator.FCStd) | N/A |
+| ![image](./thumbnails/notebook-support.FCStd_thumb.png) | [notebook-support.FCStd](./notebook-support.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket.FCStd_thumb.png) | [angle-bracket.FCStd](./angle-bracket.FCStd) | N/A |
 | ![image](./thumbnails/keychain-esp32.FCStd_thumb.png) | [keychain-esp32.FCStd](./keychain-esp32.FCStd) | N/A |
 <!-- END TABLE -->
