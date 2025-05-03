@@ -25,6 +25,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/bottom-protoboard.FCStd_thumb.png) | [bottom-protoboard.FCStd](./bottom-protoboard.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket.FCStd_thumb.png) | [angle-bracket.FCStd](./angle-bracket.FCStd) | N/A |
 | ![image](./thumbnails/monitor-little-support.FCStd_thumb.png) | [monitor-little-support.FCStd](./monitor-little-support.FCStd) | N/A |
+| ![image](./thumbnails/usb-keyring-cover.FCStd_thumb.png) | [usb-keyring-cover.FCStd](./usb-keyring-cover.FCStd) | N/A |
 | ![image](./thumbnails/rack-1u-tplink-5-ports.FCStd_thumb.png) | [rack-1u-tplink-5-ports.FCStd](./rack-1u-tplink-5-ports.FCStd) | N/A |
 | ![image](./thumbnails/keychain-esp32.FCStd_thumb.png) | [keychain-esp32.FCStd](./keychain-esp32.FCStd) | N/A |
 <!-- END TABLE -->
