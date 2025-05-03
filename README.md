@@ -11,6 +11,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/rpi-zero-camera-holder.FCStd_thumb.png) | [rpi-zero-camera-holder.FCStd](./rpi-zero-camera-holder.FCStd) | N/A |
 | ![image](./thumbnails/atx-adapter-support-for-table-aliexpress.FCStd_thumb.png) | [atx-adapter-support-for-table-aliexpress.FCStd](./atx-adapter-support-for-table-aliexpress.FCStd) | N/A |
 | ![image](./thumbnails/wood-joint-attemp-01.FCStd_thumb.png) | [wood-joint-attemp-01.FCStd](./wood-joint-attemp-01.FCStd) | N/A |
+| ![image](./thumbnails/shoe-organizer-no-holes.FCStd_thumb.png) | [shoe-organizer-no-holes.FCStd](./shoe-organizer-no-holes.FCStd) | N/A |
 | ![image](./thumbnails/round-screwdriver-adapter.FCStd_thumb.png) | [round-screwdriver-adapter.FCStd](./round-screwdriver-adapter.FCStd) | N/A |
 | ![image](./thumbnails/bracket-for-desktop-under-table.FCStd_thumb.png) | [bracket-for-desktop-under-table.FCStd](./bracket-for-desktop-under-table.FCStd) | N/A |
 | ![image](./thumbnails/round-adapter-dry-fit-fabric.FCStd_thumb.png) | [round-adapter-dry-fit-fabric.FCStd](./round-adapter-dry-fit-fabric.FCStd) | N/A |
