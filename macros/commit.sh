@@ -37,7 +37,7 @@ CURRENT_FILE_CONTENT=$(cat $TEMP_CURRENT_FOLDER/Document.xml)
 CURRENT_FILE_CONTENT=$(echo -e "$CURRENT_FILE_CONTENT" | sed -z 's/\n//g' | jq -Rs)
 MAIN_DIFF=$(echo -e "$MAIN_DIFF" | sed -z 's/\n//g' | jq -Rs)
 
-PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive git commit message that clearly explains the changes made to the CAD model, using simple language and referencing the provided file name. This will enable effective change tracking through accurate and informative messages. Just present the message with bullet points. Also, please disregard any differences related to camera settings and concentrate on changes affecting solids and sketches. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT DIFF: $MAIN_DIFF"
+PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive git commit message that clearly explains the changes made to the CAD model, using simple language and referencing the provided file name. This will enable effective change tracking through accurate and informative messages. Also, please disregard any differences related to camera settings and concentrate on changes affecting solids and sketches. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT DIFF: $MAIN_DIFF"
 
 PROMPT=$(echo "$PROMPT" | sed 's/["\]//g')
 
