@@ -22,5 +22,6 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/plate-motor-linear-actuator.FCStd_thumb.png) | [plate-motor-linear-actuator.FCStd](./plate-motor-linear-actuator.FCStd) | N/A |
 | ![image](./thumbnails/notebook-support.FCStd_thumb.png) | [notebook-support.FCStd](./notebook-support.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket.FCStd_thumb.png) | [angle-bracket.FCStd](./angle-bracket.FCStd) | N/A |
+| ![image](./thumbnails/monitor-little-support.FCStd_thumb.png) | [monitor-little-support.FCStd](./monitor-little-support.FCStd) | N/A |
 | ![image](./thumbnails/keychain-esp32.FCStd_thumb.png) | [keychain-esp32.FCStd](./keychain-esp32.FCStd) | N/A |
 <!-- END TABLE -->
