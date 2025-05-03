@@ -19,6 +19,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/parametric-wood-joint.FCStd_thumb.png) | [parametric-wood-joint.FCStd](./parametric-wood-joint.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket-2.FCStd_thumb.png) | [angle-bracket-2.FCStd](./angle-bracket-2.FCStd) | N/A |
 | ![image](./thumbnails/esp32-c3-round-display-beamsplitter-cube.FCStd_thumb.png) | [esp32-c3-round-display-beamsplitter-cube.FCStd](./esp32-c3-round-display-beamsplitter-cube.FCStd) | N/A |
+| ![image](./thumbnails/rack.FCStd_thumb.png) | [rack.FCStd](./rack.FCStd) | N/A |
 | ![image](./thumbnails/plate-motor-linear-actuator.FCStd_thumb.png) | [plate-motor-linear-actuator.FCStd](./plate-motor-linear-actuator.FCStd) | N/A |
 | ![image](./thumbnails/notebook-support.FCStd_thumb.png) | [notebook-support.FCStd](./notebook-support.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket.FCStd_thumb.png) | [angle-bracket.FCStd](./angle-bracket.FCStd) | N/A |
