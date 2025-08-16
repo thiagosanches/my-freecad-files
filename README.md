@@ -15,14 +15,17 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/parametric-wood-joint.FCStd_thumb.png) | [parametric-wood-joint.FCStd](./parametric-wood-joint.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket-2.FCStd_thumb.png) | [angle-bracket-2.FCStd](./angle-bracket-2.FCStd) | N/A |
 | ![image](./thumbnails/round-screwdriver-adapter.FCStd_thumb.png) | [round-screwdriver-adapter.FCStd](./round-screwdriver-adapter.FCStd) | N/A |
+| ![image](./thumbnails/rack2uv2-original-no-fillet.FCStd_thumb.png) | [rack2uv2-original-no-fillet.FCStd](./rack2uv2-original-no-fillet.FCStd) | N/A |
 | ![image](./thumbnails/monitor-little-support.FCStd_thumb.png) | [monitor-little-support.FCStd](./monitor-little-support.FCStd) | N/A |
 | ![image](./thumbnails/plate-motor-linear-actuator.FCStd_thumb.png) | [plate-motor-linear-actuator.FCStd](./plate-motor-linear-actuator.FCStd) | N/A |
 | ![image](./thumbnails/bracket-for-desktop-under-table.FCStd_thumb.png) | [bracket-for-desktop-under-table.FCStd](./bracket-for-desktop-under-table.FCStd) | N/A |
 | ![image](./thumbnails/round-adapter-dry-fit-fabric.FCStd_thumb.png) | [round-adapter-dry-fit-fabric.FCStd](./round-adapter-dry-fit-fabric.FCStd) | N/A |
 | ![image](./thumbnails/rack-1u-tplink-5-ports.FCStd_thumb.png) | [rack-1u-tplink-5-ports.FCStd](./rack-1u-tplink-5-ports.FCStd) | N/A |
 | ![image](./thumbnails/shoe-organizer-no-holes.FCStd_thumb.png) | [shoe-organizer-no-holes.FCStd](./shoe-organizer-no-holes.FCStd) | N/A |
+| ![image](./thumbnails/rack2uv2-fillet.FCStd_thumb.png) | [rack2uv2-fillet.FCStd](./rack2uv2-fillet.FCStd) | N/A |
 | ![image](./thumbnails/wood-joint-attemp-01.FCStd_thumb.png) | [wood-joint-attemp-01.FCStd](./wood-joint-attemp-01.FCStd) | N/A |
 | ![image](./thumbnails/rack.FCStd_thumb.png) | [rack.FCStd](./rack.FCStd) | N/A |
+| ![image](./thumbnails/rack2uv2-original-no-rounding.FCStd_thumb.png) | [rack2uv2-original-no-rounding.FCStd](./rack2uv2-original-no-rounding.FCStd) | N/A |
 | ![image](./thumbnails/angle-bracket.FCStd_thumb.png) | [angle-bracket.FCStd](./angle-bracket.FCStd) | N/A |
 | ![image](./thumbnails/rack-1u-inox-bar.FCStd_thumb.png) | [rack-1u-inox-bar.FCStd](./rack-1u-inox-bar.FCStd) | N/A |
 | ![image](./thumbnails/rpi-zero-camera-holder.FCStd_thumb.png) | [rpi-zero-camera-holder.FCStd](./rpi-zero-camera-holder.FCStd) | N/A |
