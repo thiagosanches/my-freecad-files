@@ -35,5 +35,6 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/rack-1u-tplink-5-ports.FCStd_thumb.png) | [rack-1u-tplink-5-ports.FCStd](./rack-1u-tplink-5-ports.FCStd) | N/A |
 | ![image](./thumbnails/rack.FCStd_thumb.png) | [rack.FCStd](./rack.FCStd) | N/A |
 | ![image](./thumbnails/rpi-zero-camera-holder.FCStd_thumb.png) | [rpi-zero-camera-holder.FCStd](./rpi-zero-camera-holder.FCStd) | N/A |
+| ![image](./thumbnails/note-no-fillets.FCStd_thumb.png) | [note-no-fillets.FCStd](./note-no-fillets.FCStd) | N/A |
 | ![image](./thumbnails/monitor-little-support.FCStd_thumb.png) | [monitor-little-support.FCStd](./monitor-little-support.FCStd) | N/A |
 <!-- END TABLE -->
