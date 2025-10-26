@@ -12,6 +12,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/roundcable0.FCStd_thumb.png) | [roundcable0.FCStd](./roundcable0.FCStd) | N/A |
 | ![image](./thumbnails/wood-joint-attemp-01.FCStd_thumb.png) | [wood-joint-attemp-01.FCStd](./wood-joint-attemp-01.FCStd) | N/A |
 | ![image](./thumbnails/pegboard-hook-2.FCStd_thumb.png) | [pegboard-hook-2.FCStd](./pegboard-hook-2.FCStd) | N/A |
+| ![image](./thumbnails/keyboard-philipz.FCStd_thumb.png) | [keyboard-philipz.FCStd](./keyboard-philipz.FCStd) | N/A |
 | ![image](./thumbnails/rack2uv2-original-no-fillet.FCStd_thumb.png) | [rack2uv2-original-no-fillet.FCStd](./rack2uv2-original-no-fillet.FCStd) | N/A |
 | ![image](./thumbnails/shoe-organizer-no-holes.FCStd_thumb.png) | [shoe-organizer-no-holes.FCStd](./shoe-organizer-no-holes.FCStd) | N/A |
 | ![image](./thumbnails/notebook-support.FCStd_thumb.png) | [notebook-support.FCStd](./notebook-support.FCStd) | N/A |
