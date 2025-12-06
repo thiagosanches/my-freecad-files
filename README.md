@@ -17,7 +17,6 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/rack2uv2-original-no-fillet.FCStd_thumb.png) | [rack2uv2-original-no-fillet.FCStd](./rack2uv2-original-no-fillet.FCStd) | N/A |
 | ![image](./thumbnails/elbow.FCStd_thumb.png) | [elbow.FCStd](./elbow.FCStd) | N/A |
 | ![image](./thumbnails/shoe-organizer-no-holes.FCStd_thumb.png) | [shoe-organizer-no-holes.FCStd](./shoe-organizer-no-holes.FCStd) | N/A |
-| ![image](./thumbnails/Unnamed.FCStd_thumb.png) | [Unnamed.FCStd](./Unnamed.FCStd) | N/A |
 | ![image](./thumbnails/notebook-support.FCStd_thumb.png) | [notebook-support.FCStd](./notebook-support.FCStd) | N/A |
 | ![image](./thumbnails/usb-keyring-cover.FCStd_thumb.png) | [usb-keyring-cover.FCStd](./usb-keyring-cover.FCStd) | N/A |
 | ![image](./thumbnails/parametric-wood-joint.FCStd_thumb.png) | [parametric-wood-joint.FCStd](./parametric-wood-joint.FCStd) | N/A |
