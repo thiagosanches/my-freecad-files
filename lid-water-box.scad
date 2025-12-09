@@ -32,10 +32,22 @@ module symmetricHoles(width, depth, holeDiameter, holeHeight) {
 
 module roundedCube(width, depth, height, radius) {
     linear_extrude(height, center = true)
-    offset(r = radius)
-    offset(r = -radius)
-    square([width - radius*2, depth - radius*2], center = true);
+    hull() {
+        // Place circles at corners, accounting for radius
+        translate([-width/2 + radius, -depth/2 + radius])
+        circle(r = radius);
+        
+        translate([width/2 - radius, -depth/2 + radius])
+        circle(r = radius);
+        
+        translate([-width/2 + radius, depth/2 - radius])
+        circle(r = radius);
+        
+        translate([width/2 - radius, depth/2 - radius])
+        circle(r = radius);
+    }
 }
+
 
 module bottomCutout(width, depth, height, wall_thickness = 2) {
     translate([0, 0, -height/2])
