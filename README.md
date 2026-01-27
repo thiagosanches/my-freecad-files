@@ -32,6 +32,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/lamp-replacement-tab-no-fillet-version.FCStd_thumb.png) | [lamp-replacement-tab-no-fillet-version.FCStd](./lamp-replacement-tab-no-fillet-version.FCStd) | N/A |
 | ![image](./thumbnails/plate-motor-linear-actuator.FCStd_thumb.png) | [plate-motor-linear-actuator.FCStd](./plate-motor-linear-actuator.FCStd) | N/A |
 | ![image](./thumbnails/bracket-for-desktop-under-table.FCStd_thumb.png) | [bracket-for-desktop-under-table.FCStd](./bracket-for-desktop-under-table.FCStd) | N/A |
+| ![image](./thumbnails/lamp-round-ceiling-adapter.FCStd_thumb.png) | [lamp-round-ceiling-adapter.FCStd](./lamp-round-ceiling-adapter.FCStd) | N/A |
 | ![image](./thumbnails/jig-for-camera-90-tracing-pictures.FCStd_thumb.png) | [jig-for-camera-90-tracing-pictures.FCStd](./jig-for-camera-90-tracing-pictures.FCStd) | N/A |
 | ![image](./thumbnails/faucet.FCStd_thumb.png) | [faucet.FCStd](./faucet.FCStd) | N/A |
 | ![image](./thumbnails/rack2uv2.FCStd_thumb.png) | [rack2uv2.FCStd](./rack2uv2.FCStd) | N/A |
