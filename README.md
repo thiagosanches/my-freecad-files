@@ -12,6 +12,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/bottom-protoboard.FCStd_thumb.png) | [bottom-protoboard.FCStd](./bottom-protoboard.FCStd) | N/A |
 | ![image](./thumbnails/roundcable0.FCStd_thumb.png) | [roundcable0.FCStd](./roundcable0.FCStd) | N/A |
 | ![image](./thumbnails/wood-joint-attemp-01.FCStd_thumb.png) | [wood-joint-attemp-01.FCStd](./wood-joint-attemp-01.FCStd) | N/A |
+| ![image](./thumbnails/lamp-replacement-tab-with-fillet.FCStd_thumb.png) | [lamp-replacement-tab-with-fillet.FCStd](./lamp-replacement-tab-with-fillet.FCStd) | N/A |
 | ![image](./thumbnails/pegboard-hook-2.FCStd_thumb.png) | [pegboard-hook-2.FCStd](./pegboard-hook-2.FCStd) | N/A |
 | ![image](./thumbnails/keyboard-philipz.FCStd_thumb.png) | [keyboard-philipz.FCStd](./keyboard-philipz.FCStd) | N/A |
 | ![image](./thumbnails/rack2uv2-original-no-fillet.FCStd_thumb.png) | [rack2uv2-original-no-fillet.FCStd](./rack2uv2-original-no-fillet.FCStd) | N/A |
@@ -28,6 +29,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/angle-bracket-2.FCStd_thumb.png) | [angle-bracket-2.FCStd](./angle-bracket-2.FCStd) | N/A |
 | ![image](./thumbnails/roundcable-original.FCStd_thumb.png) | [roundcable-original.FCStd](./roundcable-original.FCStd) | N/A |
 | ![image](./thumbnails/keychain-esp32.FCStd_thumb.png) | [keychain-esp32.FCStd](./keychain-esp32.FCStd) | N/A |
+| ![image](./thumbnails/lamp-replacement-tab-no-fillet-version.FCStd_thumb.png) | [lamp-replacement-tab-no-fillet-version.FCStd](./lamp-replacement-tab-no-fillet-version.FCStd) | N/A |
 | ![image](./thumbnails/plate-motor-linear-actuator.FCStd_thumb.png) | [plate-motor-linear-actuator.FCStd](./plate-motor-linear-actuator.FCStd) | N/A |
 | ![image](./thumbnails/bracket-for-desktop-under-table.FCStd_thumb.png) | [bracket-for-desktop-under-table.FCStd](./bracket-for-desktop-under-table.FCStd) | N/A |
 | ![image](./thumbnails/jig-for-camera-90-tracing-pictures.FCStd_thumb.png) | [jig-for-camera-90-tracing-pictures.FCStd](./jig-for-camera-90-tracing-pictures.FCStd) | N/A |
