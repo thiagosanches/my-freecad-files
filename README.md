@@ -5,6 +5,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 <!-- BEGIN TABLE -->
 | Thumbnail   | File        | Description |
 |-------------|-------------|-------------|
+| ![image](./thumbnails/testing-macro-setup.FCStd_thumb.png) | [testing-macro-setup.FCStd](./testing-macro-setup.FCStd) | N/A |
 | ![image](./thumbnails/pegboard-hook-2.FCStd_thumb.png) | [pegboard-hook-2.FCStd](./pegboard-hook-2.FCStd) | N/A |
 | ![image](./thumbnails/esp32-c3-round-display-beamsplitter-cube.FCStd_thumb.png) | [esp32-c3-round-display-beamsplitter-cube.FCStd](./esp32-c3-round-display-beamsplitter-cube.FCStd) | N/A |
 | ![image](./thumbnails/rack.FCStd_thumb.png) | [rack.FCStd](./rack.FCStd) | N/A |
