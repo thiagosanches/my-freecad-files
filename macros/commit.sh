@@ -51,9 +51,9 @@ if [[ "$IS_NEW_FILE" == false ]]; then
         --exclude='Thumbnail.png' \
         "$TEMP_PREVIOUS_FOLDER" "$TEMP_CURRENT_FOLDER") || true
 
-    PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive git commit message that clearly explains the changes made to the CAD model, using simple language and referencing the provided file name. This will enable effective change tracking through accurate and informative messages. Also, please disregard any differences related to camera settings and concentrate on changes affecting solids and sketches. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT DIFF: $MAIN_DIFF"
+    PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive git commit message that clearly explains the changes made to the CAD model, using simple language and referencing the provided file name. This will enable effective change tracking through accurate and informative messages. Also, please disregard any differences related to camera settings and concentrate on changes affecting solids and sketches. Output ONLY the commit message text — no labels, no preamble, no markdown formatting. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT DIFF: $MAIN_DIFF"
 else
-    PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive git commit message for a brand new FreeCAD file being added to the repository for the first time. Use simple language and reference the provided file name. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT"
+    PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive git commit message for a brand new FreeCAD file being added to the repository for the first time. Use simple language and reference the provided file name. Output ONLY the commit message text — no labels, no preamble, no markdown formatting. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT"
 fi
 
 # Build JSON body safely via jq — pipe prompt via stdin to avoid ARG_MAX limits
@@ -71,7 +71,8 @@ printf '%s' "$PROMPT" | jq -Rs \
 MESSAGE=$(curl "https://openrouter.ai/api/v1/chat/completions" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $OR_KEY_GIT_COMMIT_MESSAGE" \
-    -d @"$BODY_JSON" | jq '.choices[].message.content' --raw-output)
+    -d @"$BODY_JSON" | jq '.choices[].message.content' --raw-output \
+    | sed '/^[[:space:]]*\*\{0,2\}[Cc]ommit [Mm]essage[[:space:]]*:\{0,1\}\*\{0,2\}[[:space:]]*$/d')
 
 [[ -z "$MESSAGE" ]] && { echo "Failed to generate commit message from API." >&2; exit 1; }
 
