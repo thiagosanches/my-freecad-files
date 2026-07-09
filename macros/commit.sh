@@ -56,12 +56,11 @@ else
     PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core functionality, your main task is to craft a concise and descriptive git commit message for a brand new FreeCAD file being added to the repository for the first time. Use simple language and reference the provided file name. CURRENT FILE NAME: $FREECAD_FILE_ONLY CURRENT FILE CONTENT: $CURRENT_FILE_CONTENT"
 fi
 
-# Build JSON body safely via jq to handle all special characters and newlines
+# Build JSON body safely via jq — pipe prompt via stdin to avoid ARG_MAX limits
 # If you want to use OLLAMA with the DeepSeek model locally, the model is: deepseek-r1:8b
-jq -n \
+printf '%s' "$PROMPT" | jq -Rs \
     --arg model "deepseek/deepseek-v4-flash" \
-    --arg prompt "$PROMPT" \
-    '{model: $model, messages: [{role: "user", content: $prompt}]}' > "$BODY_JSON"
+    '{model: $model, messages: [{role: "user", content: .}]}' > "$BODY_JSON"
 
 # You can switch to OLLAMA locally and use any model that suits your needs. For example:
 #curl -X POST http://localhost:8080/api/chat/completions \
