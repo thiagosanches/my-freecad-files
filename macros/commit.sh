@@ -25,14 +25,13 @@ git pull
 
 # You just need to define the file with the following content:
 source ~/.openrouter.ai.properties
-source "$MACROS_FOLDER/ai.properties"
 
 mkdir -p "$TEMP_CURRENT_FOLDER"
 mkdir -p "$TEMP_PREVIOUS_FOLDER"
 
-# Get the previous version of the file.
-if ! git show HEAD~1:"$FREECAD_FILE_ONLY" > "$FREECAD_PREVIOUS_FILE" 2>/dev/null; then
-    echo "No previous commit found (HEAD~1 does not exist). Cannot generate diff." >&2
+# Get the last committed version of the file (before the current save).
+if ! git show HEAD:"$FREECAD_FILE_ONLY" > "$FREECAD_PREVIOUS_FILE" 2>/dev/null; then
+    echo "No committed version of '$FREECAD_FILE_ONLY' found (first commit?). Cannot generate diff." >&2
     exit 1
 fi
 

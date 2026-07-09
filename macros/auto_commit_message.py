@@ -33,15 +33,24 @@ class GitCommitGenerator(QObject):
         doc.save()
 
         commit_script = os.path.join(os.path.dirname(__file__), "commit.sh")
-        process = subprocess.Popen([commit_script, file_path])
-        return_code = process.wait()
+        result = subprocess.run(
+            [commit_script, file_path],
+            capture_output=True,
+            text=True
+        )
 
-        if return_code == 0:
+        if result.stdout:
+            FreeCAD.Console.PrintMessage(result.stdout + "\n")
+        if result.stderr:
+            FreeCAD.Console.PrintError(result.stderr + "\n")
+
+        if result.returncode == 0:
             QMessageBox.information(
                 None, "OK", "We are good!")
         else:
+            error_detail = result.stderr or result.stdout or "Unknown error"
             QMessageBox.critical(
-                None, "Error", "The script was not executed properly!")
+                None, "Error", f"Script failed:\n\n{error_detail}")
 
 # Initialize the handler when macro is loaded
 print("FreeCAD version:", FreeCAD.Version())
