@@ -1,9 +1,14 @@
 # auto_commit_message.py
 # FreeCAD macro to generate AI commit messages on save using Git diffs.
+import os
 import FreeCAD
 import FreeCADGui as Gui
-from PySide2.QtCore import QObject
-from PySide2.QtWidgets import QMessageBox
+try:
+    from PySide6.QtCore import QObject
+    from PySide6.QtWidgets import QMessageBox
+except ImportError:
+    from PySide2.QtCore import QObject
+    from PySide2.QtWidgets import QMessageBox
 import subprocess
 
 
@@ -21,23 +26,21 @@ class GitCommitGenerator(QObject):
             return
 
         file_path = doc.FileName
-        print(file_path)
+        FreeCAD.Console.PrintMessage(f"Committing: {file_path}\n")
 
         # Just to put the thumbnails right in the center, so they look better when viewing them.
         Gui.SendMsgToActiveView("ViewFit")
         doc.save()
 
-        process = subprocess.Popen([
-            "bash", "-c",
-            f"/home/thiago/r/github/my-freecad-files/macros/commit.sh '{file_path}'"
-        ])
+        commit_script = os.path.join(os.path.dirname(__file__), "commit.sh")
+        process = subprocess.Popen([commit_script, file_path])
         return_code = process.wait()
 
         if return_code == 0:
             QMessageBox.information(
                 None, "OK", "We are good!")
         else:
-            QMessageBox.error(
+            QMessageBox.critical(
                 None, "Error", "The script was not executed properly!")
 
 # Initialize the handler when macro is loaded

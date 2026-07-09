@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+[[ $# -lt 1 ]] && { echo "Usage: $0 <freecad-file>" >&2; exit 1; }
+
 COMMIT_FILE="$(realpath "$0")"
 FREECAD_FILE="$(realpath "$1")"
 FREECAD_PREVIOUS_FILE="$FREECAD_FILE.previous.FCStd"
@@ -13,8 +15,10 @@ FREECAD_FILE_ONLY="$(basename "$FREECAD_FILE")"
 cd "$(dirname "$FREECAD_FILE")"
 MACROS_FOLDER="$(dirname "$COMMIT_FILE")"
 
+BODY_JSON="$(mktemp --suffix=.json)"
+
 # Cleanup temp files on exit (success or failure)
-trap 'rm -rf "$TEMP_PREVIOUS_FOLDER" "$TEMP_CURRENT_FOLDER" "$FREECAD_PREVIOUS_FILE" body.json' EXIT
+trap 'rm -rf "$TEMP_PREVIOUS_FOLDER" "$TEMP_CURRENT_FOLDER" "$FREECAD_PREVIOUS_FILE" "$BODY_JSON"' EXIT
 
 # Pull before making changes to avoid mid-script conflicts
 git pull
@@ -42,7 +46,6 @@ MAIN_DIFF=$(diff -r \
     --exclude='*.brp' \
     --exclude='*.bin' \
     --exclude='Thumbnail.png' \
-    --color \
     "$TEMP_PREVIOUS_FOLDER" "$TEMP_CURRENT_FOLDER") || true
 
 CURRENT_FILE_CONTENT=$(cat "$TEMP_CURRENT_FOLDER/Document.xml")
@@ -54,7 +57,7 @@ PROMPT="As an experienced FreeCAD user with in-depth knowledge of its core funct
 jq -n \
     --arg model "deepseek/deepseek-v4-flash" \
     --arg prompt "$PROMPT" \
-    '{model: $model, messages: [{role: "user", content: $prompt}]}' > body.json
+    '{model: $model, messages: [{role: "user", content: $prompt}]}' > "$BODY_JSON"
 
 # You can switch to OLLAMA locally and use any model that suits your needs. For example:
 #curl -X POST http://localhost:8080/api/chat/completions \
@@ -65,7 +68,9 @@ jq -n \
 MESSAGE=$(curl "https://openrouter.ai/api/v1/chat/completions" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $OR_KEY_GIT_COMMIT_MESSAGE" \
-    -d @body.json | jq '.choices[].message.content' --raw-output)
+    -d @"$BODY_JSON" | jq '.choices[].message.content' --raw-output)
+
+[[ -z "$MESSAGE" ]] && { echo "Failed to generate commit message from API." >&2; exit 1; }
 
 echo "$MESSAGE"
 
