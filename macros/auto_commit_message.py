@@ -4,17 +4,35 @@ import os
 import FreeCAD
 import FreeCADGui as Gui
 try:
-    from PySide6.QtCore import QObject
+    from PySide6.QtCore import QObject, QThread, Signal
     from PySide6.QtWidgets import QMessageBox
 except ImportError:
-    from PySide2.QtCore import QObject
+    from PySide2.QtCore import QObject, QThread, Signal
     from PySide2.QtWidgets import QMessageBox
 import subprocess
+
+
+class CommitWorker(QThread):
+    finished = Signal(int, str, str)  # return_code, stdout, stderr
+
+    def __init__(self, script, file_path):
+        super().__init__()
+        self.script = script
+        self.file_path = file_path
+
+    def run(self):
+        result = subprocess.run(
+            [self.script, self.file_path],
+            capture_output=True,
+            text=True
+        )
+        self.finished.emit(result.returncode, result.stdout, result.stderr)
 
 
 class GitCommitGenerator(QObject):
     def __init__(self):
         super().__init__()
+        self.worker = None  # keep reference to prevent garbage collection
 
     def main(self):
         FreeCAD.Console.PrintMessage("AutoCommit Message macro initialized\n")
@@ -33,22 +51,20 @@ class GitCommitGenerator(QObject):
         doc.save()
 
         commit_script = os.path.join(os.path.dirname(__file__), "commit.sh")
-        result = subprocess.run(
-            [commit_script, file_path],
-            capture_output=True,
-            text=True
-        )
+        self.worker = CommitWorker(commit_script, file_path)
+        self.worker.finished.connect(self._on_finished)
+        self.worker.start()
 
-        if result.stdout:
-            FreeCAD.Console.PrintMessage(result.stdout + "\n")
-        if result.stderr:
-            FreeCAD.Console.PrintError(result.stderr + "\n")
+    def _on_finished(self, return_code, stdout, stderr):
+        if stdout:
+            FreeCAD.Console.PrintMessage(stdout + "\n")
+        if stderr:
+            FreeCAD.Console.PrintError(stderr + "\n")
 
-        if result.returncode == 0:
-            QMessageBox.information(
-                None, "OK", "We are good!")
+        if return_code == 0:
+            QMessageBox.information(None, "OK", "We are good!")
         else:
-            error_detail = result.stderr or result.stdout or "Unknown error"
+            error_detail = stderr or stdout or "Unknown error"
             QMessageBox.critical(
                 None, "Error", f"Script failed:\n\n{error_detail}")
 
