@@ -31,6 +31,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/round-adapter-dry-fit-fabric.FCStd_thumb.png) | [round-adapter-dry-fit-fabric.FCStd](./round-adapter-dry-fit-fabric.FCStd) | N/A |
 | ![image](./thumbnails/note.FCStd_thumb.png) | [note.FCStd](./note.FCStd) | N/A |
 | ![image](./thumbnails/elbow.FCStd_thumb.png) | [elbow.FCStd](./elbow.FCStd) | N/A |
+| ![image](./thumbnails/wled-enclosure-esp32.FCStd_thumb.png) | [wled-enclosure-esp32.FCStd](./wled-enclosure-esp32.FCStd) | N/A |
 | ![image](./thumbnails/rack-1u-tplink-5-ports.FCStd_thumb.png) | [rack-1u-tplink-5-ports.FCStd](./rack-1u-tplink-5-ports.FCStd) | N/A |
 | ![image](./thumbnails/box2.FCStd_thumb.png) | [box2.FCStd](./box2.FCStd) | N/A |
 | ![image](./thumbnails/rack2uv2-original-no-fillet.FCStd_thumb.png) | [rack2uv2-original-no-fillet.FCStd](./rack2uv2-original-no-fillet.FCStd) | N/A |
