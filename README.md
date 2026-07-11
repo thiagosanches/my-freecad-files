@@ -42,6 +42,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/keyring-arduino.FCStd_thumb.png) | [keyring-arduino.FCStd](./keyring-arduino.FCStd) | N/A |
 | ![image](./thumbnails/round-screwdriver-adapter.FCStd_thumb.png) | [round-screwdriver-adapter.FCStd](./round-screwdriver-adapter.FCStd) | N/A |
 | ![image](./thumbnails/keyboard-philipz.FCStd_thumb.png) | [keyboard-philipz.FCStd](./keyboard-philipz.FCStd) | N/A |
+| ![image](./thumbnails/09812098123.FCStd_thumb.png) | [09812098123.FCStd](./09812098123.FCStd) | N/A |
 | ![image](./thumbnails/keychain-esp32.FCStd_thumb.png) | [keychain-esp32.FCStd](./keychain-esp32.FCStd) | N/A |
 | ![image](./thumbnails/bottom-protoboard.FCStd_thumb.png) | [bottom-protoboard.FCStd](./bottom-protoboard.FCStd) | N/A |
 | ![image](./thumbnails/faucet.FCStd_thumb.png) | [faucet.FCStd](./faucet.FCStd) | N/A |
