@@ -17,6 +17,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/rack-1u-inox-bar.FCStd_thumb.png) | [rack-1u-inox-bar.FCStd](./rack-1u-inox-bar.FCStd) | N/A |
 | ![image](./thumbnails/lamp-replacement-tab-no-fillet-version.FCStd_thumb.png) | [lamp-replacement-tab-no-fillet-version.FCStd](./lamp-replacement-tab-no-fillet-version.FCStd) | N/A |
 | ![image](./thumbnails/monitor-little-support.FCStd_thumb.png) | [monitor-little-support.FCStd](./monitor-little-support.FCStd) | N/A |
+| ![image](./thumbnails/opengrid-generic-support-piler.FCStd_thumb.png) | [opengrid-generic-support-piler.FCStd](./opengrid-generic-support-piler.FCStd) | N/A |
 | ![image](./thumbnails/round-adapter-dry-fit-fabric.FCStd_thumb.png) | [round-adapter-dry-fit-fabric.FCStd](./round-adapter-dry-fit-fabric.FCStd) | N/A |
 | ![image](./thumbnails/testing-macro-setup.FCStd_thumb.png) | [testing-macro-setup.FCStd](./testing-macro-setup.FCStd) | N/A |
 | ![image](./thumbnails/jig-for-camera-90-tracing-pictures.FCStd_thumb.png) | [jig-for-camera-90-tracing-pictures.FCStd](./jig-for-camera-90-tracing-pictures.FCStd) | N/A |
