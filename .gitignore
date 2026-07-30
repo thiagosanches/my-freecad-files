@@ -12,3 +12,4 @@ macros/ai.properties
 temp_current/
 temp_previous/
 macros/nohup.out
+*.step
