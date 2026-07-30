@@ -12,6 +12,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 | ![image](./thumbnails/roundcable0.FCStd_thumb.png) | [roundcable0.FCStd](./roundcable0.FCStd) | N/A |
 | ![image](./thumbnails/tconnection.FCStd_thumb.png) | [tconnection.FCStd](./tconnection.FCStd) | N/A |
 | ![image](./thumbnails/box2.FCStd_thumb.png) | [box2.FCStd](./box2.FCStd) | N/A |
+| ![image](./thumbnails/opengrid-multimeter-generic-no-fillet.FCStd_thumb.png) | [opengrid-multimeter-generic-no-fillet.FCStd](./opengrid-multimeter-generic-no-fillet.FCStd) | N/A |
 | ![image](./thumbnails/lamp-replacement-tab-with-fillet.FCStd_thumb.png) | [lamp-replacement-tab-with-fillet.FCStd](./lamp-replacement-tab-with-fillet.FCStd) | N/A |
 | ![image](./thumbnails/rack2uv2-original-no-fillet.FCStd_thumb.png) | [rack2uv2-original-no-fillet.FCStd](./rack2uv2-original-no-fillet.FCStd) | N/A |
 | ![image](./thumbnails/rack-1u-inox-bar.FCStd_thumb.png) | [rack-1u-inox-bar.FCStd](./rack-1u-inox-bar.FCStd) | N/A |
