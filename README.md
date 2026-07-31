@@ -7,6 +7,7 @@ As a beginner, I've been using FreeCAD to create and build various projects. Her
 |-------------|-------------|-------------|
 | ![image](./thumbnails/098019823.FCStd_thumb.png) | [098019823.FCStd](./098019823.FCStd) | N/A |
 | ![image](./thumbnails/faucet.FCStd_thumb.png) | [faucet.FCStd](./faucet.FCStd) | N/A |
+| ![image](./thumbnails/opengrid-lr44-bateria.FCStd_thumb.png) | [opengrid-lr44-bateria.FCStd](./opengrid-lr44-bateria.FCStd) | N/A |
 | ![image](./thumbnails/lamp-round-ceiling-adapter.FCStd_thumb.png) | [lamp-round-ceiling-adapter.FCStd](./lamp-round-ceiling-adapter.FCStd) | N/A |
 | ![image](./thumbnails/esp32-c3-round-display-beamsplitter-cube.FCStd_thumb.png) | [esp32-c3-round-display-beamsplitter-cube.FCStd](./esp32-c3-round-display-beamsplitter-cube.FCStd) | N/A |
 | ![image](./thumbnails/roundcable0.FCStd_thumb.png) | [roundcable0.FCStd](./roundcable0.FCStd) | N/A |
